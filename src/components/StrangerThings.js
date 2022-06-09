@@ -121,7 +121,7 @@ class StrangerThings extends React.Component {
           hereIsTheUpsideDownWorld,
         )}` }
       >
-        { REACT_APP_DEV === 'true' && <h1>Em desenvolvimento</h1> }
+        { REACT_APP_DEV && <h1>{REACT_APP_DEV}</h1> }
         <div className="content strangerfy">
           <div className="change-reality">
             <button type="button" onClick={ this.changeRealityClick }>
